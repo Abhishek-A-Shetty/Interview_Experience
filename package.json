@@ -1,0 +1,13 @@
+{
+  "name": "interview-experience",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "cd backend && npm start",
+    "heroku-postbuild": "cd frontend && npm install && npm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+} 

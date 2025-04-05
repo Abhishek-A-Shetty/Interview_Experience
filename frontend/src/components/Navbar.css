@@ -1,0 +1,84 @@
+/* Ensure navbar sticks properly */
+.navbar {
+    margin: 0 !important; 
+    padding: 10px 20px; /* Adjust as needed */
+}
+.navbar.navbar-expand-lg {
+    margin-bottom: 0 !important;
+}
+
+.navbar {
+    margin: 0 !important;
+    padding: 10px 20px;
+    background-color: rgb(72, 72, 72) !important;
+    border-bottom: 2px solid black;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Push the main content down so it's not hidden under the fixed navbar */
+.main-content {
+    margin-top: 80px !important; /* Adjust based on navbar height */
+    padding-top: 0 !important;
+}
+
+/* Fix login button alignment */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds spacing between nav items */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 10px; /* Moves login button slightly left */
+}
+
+/* Ensure navbar container has proper spacing */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Navbar Title */
+.navbar-brand {
+    color: rgb(4, 12, 12) !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: rgb(0, 16, 16) !important;
+    transition: 0.3s;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: rgb(52, 101, 185) !important;
+    text-shadow: 0px 0px 8px rgb(2, 83, 83);
+}
+
+/* Logout Button */
+.btn-outline-danger {
+    border: 2px solid rgb(6, 12, 12) !important;
+    color: rgb(1, 16, 16) !important;
+    background-color: gray !important;
+   
+}
+
+/* Logout Button Hover Effect */
+.btn-outline-danger:hover {
+    background-color: black !important;
+    color: whitesmoke !important;
+    
+}
+
+/* Navbar Toggle Button (for mobile view) */
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
